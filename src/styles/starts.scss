@@ -1,0 +1,24 @@
+.stars {
+  display: flex;
+}
+
+.star {
+  background-image: url(../images/star.svg);
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stars__reviews-count {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 17px;
+  align-self: center;
+}
+
+.stars--4 .star:nth-child(-n + 4) {
+  background-image: url('../images/star-active.svg');
+}

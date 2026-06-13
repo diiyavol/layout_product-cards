@@ -1,4 +1,5 @@
-@import './variables.scss';
+@import './variables';
+@import './starts';
 
 * {
   margin: 0;
@@ -23,11 +24,6 @@
 
     margin-top: 32px;
   }
-
-  &__stars {
-    display: flex;
-  }
-
   &__text {
     width: 166px;
 
@@ -50,21 +46,7 @@
     line-height: 14px;
     color: $secondary;
   }
-  &__star {
-    background-image: url(../images/star.svg);
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &__reviews-count {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 10px;
-    margin-left: 17px;
-    align-self: center;
-  }
+
   &__button {
     background-color: $blue-accent;
     border-radius: 5px;
@@ -114,8 +96,4 @@
     font-size: 16px;
     line-height: 18px;
   }
-}
-
-.product-card__stars--4 .product-card__star:nth-child(-n + 4) {
-  background-image: url('../images/star-active.svg');
 }
